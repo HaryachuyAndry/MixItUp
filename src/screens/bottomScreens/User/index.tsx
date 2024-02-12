@@ -6,9 +6,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, {useState} from 'react';
-import {SCREENS} from '../../navigation/screens';
-import {BottomStackScreenParamList} from '../../navigation/BottomNavigation/bottomNavigatioType';
-import {axios} from '../../api/axios';
+import {SCREENS} from '../../../navigation/screens';
+import {BottomStackScreenParamList} from '../../../navigation/BottomNavigation/bottomNavigatioType';
+import {axios} from '../../../api/axios';
 import {styles} from './styles';
 
 const User: BottomStackScreenParamList<SCREENS.user> = ({}) => {

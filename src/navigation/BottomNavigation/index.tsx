@@ -1,11 +1,11 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {SCREENS} from '../screens';
-import HomeScreen from '../../screens/HomeScreen';
-import FavoritesDrink from '../../screens/FavoritesDrink';
+import HomeScreen from '../../screens/bottomScreens/HomeScreen';
+import FavoritesDrink from '../../screens/bottomScreens/FavoritesDrink';
 import {BottomStackParamList} from './bottomNavigatioType';
 import {FC} from 'react';
 import {RootStackScreenType} from '../RootNavigation/navigationTypes';
-import User from '../../screens/User';
+import User from '../../screens/bottomScreens/User';
 
 const Tab = createBottomTabNavigator<BottomStackParamList>();
 

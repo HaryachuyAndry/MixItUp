@@ -6,12 +6,12 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import {SCREENS} from '../../navigation/screens';
-import {BottomStackScreenParamList} from '../../navigation/BottomNavigation/bottomNavigatioType';
-import {useActions} from '../../redux/hooks/useActions';
-import {useTypedSelector} from '../../redux/hooks/useTypedSelector';
+import {SCREENS} from '../../../navigation/screens';
+import {BottomStackScreenParamList} from '../../../navigation/BottomNavigation/bottomNavigatioType';
+import {useActions} from '../../../redux/hooks/useActions';
+import {useTypedSelector} from '../../../redux/hooks/useTypedSelector';
 import {styles} from './styles';
-import {deleteCocktailFromList} from '../../api/listCoctails';
+import {deleteCocktailFromList} from '../../../api/listCoctails';
 
 const HomeScreen: BottomStackScreenParamList<SCREENS.home> = ({}) => {
   const {fetchListHomeCocktails} = useActions();
