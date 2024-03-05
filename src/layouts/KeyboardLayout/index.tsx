@@ -10,6 +10,7 @@ const KeyboardLayout: FC<LayoutKeyboardProps> = ({children, customStyles}) => {
       style={styles.keyboard}
       keyboardVerticalOffset={120}>
       <ScrollView
+        keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
         contentContainerStyle={[styles.scrollContainer, customStyles]}>

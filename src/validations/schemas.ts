@@ -11,3 +11,10 @@ export const regFirstScreenSchema = yup.object().shape({
   nik: validationValues.password,
   password: validationValues.password,
 });
+
+export const regSecondScreenSchema = yup.object().shape({
+  dob: validationValues.name,
+  gender: validationValues.password,
+  preferences: validationValues.password,
+  allergies: validationValues.name,
+});

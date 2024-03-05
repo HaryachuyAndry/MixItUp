@@ -23,11 +23,14 @@ export const validationValues = {
     .min(6, 'Мінімальна кількість символів 6')
     .max(25, 'Максимальна кількість символів 25')
     .test('phone', 'emojiNotAllowed', v => !v?.match?.(emojiRegex())?.length),
-  age: yup
+  dob: yup.date(),
+  gender: yup.string(),
+  preferences: yup
     .string()
-    .required(required)
-    .min(6, 'Мінімальна кількість символів 6')
-    .max(25, 'Максимальна кількість символів 25')
-    .matches(/^[0-9]*$/, 'Символи не припустимі')
-    .test('phone', 'emojiNotAllowed', v => !v?.match?.(emojiRegex())?.length),
+    .min(2, 'Мінімальна кількість символів 2')
+    .max(20, 'Максимальна кількість символів 20'),
+  allergies: yup
+    .string()
+    .min(2, 'Мінімальна кількість символів 2')
+    .max(20, 'Максимальна кількість символів 20'),
 };

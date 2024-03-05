@@ -14,7 +14,7 @@ const RootNavigation: React.FC = () => {
   return (
     <Stack.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName={SCREENS.preAuth}>
+      initialRouteName={SCREENS.regSecond}>
       <Stack.Screen name={SCREENS.bottom} component={BottomNavigation} />
       <Stack.Screen name={SCREENS.preAuth} component={PreAuth} />
       <Stack.Screen name={SCREENS.auth} component={Auth} />

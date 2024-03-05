@@ -7,4 +7,5 @@ export type CustomButtonProps = {
   customTextStyles?: TextStyle | Array<TextStyle>;
   loading?: boolean;
   disabled?: boolean;
+  errors?: any;
 };

@@ -18,4 +18,9 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     marginBottom: 30,
   },
+  formContainer: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+  },
 });
