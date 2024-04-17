@@ -5,4 +5,8 @@ export const FONT_FAMILIES = {
     medium: 'SFProDisplay-Medium',
     regular: 'SFProDisplay-Regular',
   },
+  TTNormsPro: {
+    medium: 'TTNormsPro-Medium',
+    regular: 'TTNormsPro-Regular',
+  },
 };

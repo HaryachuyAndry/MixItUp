@@ -1,11 +1,13 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import {COLORS} from '../../assets/colors';
+import {FONT_FAMILIES} from '../../assets/fonts';
 
 export const styles = StyleSheet.create({
   inner: {
     height: 54,
     alignItems: 'center',
     justifyContent: 'center',
+    zIndex: 2,
   },
   container: {
     alignSelf: 'stretch',
@@ -31,6 +33,9 @@ export const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
+    fontSize: 18,
+    fontFamily: FONT_FAMILIES.SFProDisplay.regular,
+    color: COLORS.black,
   },
   errorMessage: {
     position: 'absolute',
@@ -50,5 +55,21 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: COLORS.error,
     borderWidth: 1,
+  },
+  optionsContainer: {
+    marginBottom: 40,
+    marginTop: 20,
+  },
+  optionItem: {
+    marginVertical: 10,
+    backgroundColor: 'rgba(10,97,121,0.2)',
+    borderRadius: 10,
+  },
+  optionText: {
+    fontFamily: FONT_FAMILIES.TTNormsPro.medium,
+    fontSize: 17,
+    paddingLeft: 16,
+    paddingVertical: 10,
+    color: COLORS.mainText,
   },
 });

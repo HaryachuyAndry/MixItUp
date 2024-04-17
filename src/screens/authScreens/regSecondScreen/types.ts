@@ -1,13 +1,13 @@
-import {GenderType} from '../../../models/generalModels';
+import {GenderType, ProductType} from '../../../models/generalModels';
 
 export interface IInitialValues {
   dob: null | Date;
   gender: null | GenderType;
-  preferences: Array<string>;
-  allergies: Array<string>;
+  preferences: Array<ProductType>;
+  allergies: Array<ProductType>;
 }
 
 export type PropsHandleTextChange = {
   fieldName: keyof IInitialValues;
-  value: string;
+  value: any;
 };

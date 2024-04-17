@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
   },
-  scroll: {flex: 1},
+  scroll: {flex: 1, overflow: 'visible'},
   scrollContainer: {
     justifyContent: 'flex-end',
     flexGrow: 1,

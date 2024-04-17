@@ -5,4 +5,6 @@ export type PropsSelector = {
   error?: string;
   customStyles?: ViewStyle | Array<ViewStyle>;
   placeholder?: string;
+  value: {label: string; value: any} | null;
+  onChange: (value: {label: string; value: any}) => void;
 };

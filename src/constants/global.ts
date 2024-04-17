@@ -1,5 +1,5 @@
 export const listGenders: Array<{label: string; value: any}> = [
-  {label: 'male', value: 'male'},
-  {label: 'female', value: 'female'},
-  {label: 'other', value: 'other'},
+  {label: 'Жінка', value: 'male'},
+  {label: 'Чоловік', value: 'female'},
+  {label: 'Інше', value: 'other'},
 ];

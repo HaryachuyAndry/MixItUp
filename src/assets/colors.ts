@@ -8,4 +8,5 @@ export const COLORS = {
   yellow: '#FFE300',
   whiteGray: '#D9D9D9',
   cursor: '#304f48',
+  mainText: '#80c0c8',
 };

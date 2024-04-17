@@ -34,6 +34,8 @@ export const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 18,
+    fontFamily: FONT_FAMILIES.SFProDisplay.regular,
+    color: COLORS.black,
   },
   errorMessage: {
     position: 'absolute',

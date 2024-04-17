@@ -1,4 +1,4 @@
-import {View, Text, Image} from 'react-native';
+import {View, Image} from 'react-native';
 import React, {FC} from 'react';
 import {RootStackScreenType} from '../../../navigation/RootNavigation/navigationTypes';
 import {SCREENS} from '../../../navigation/screens';
@@ -14,8 +14,10 @@ import {IInitialValues, PropsHandleTextChange} from './types';
 import {regSecondScreenSchema} from '../../../validations/schemas';
 import Selector from '../../../components/Selector';
 import {listGenders} from '../../../constants/global';
+import InputSelector from '../../../components/InputSelector';
+import {arrayMocOptions, arrayMocValues} from './mocData';
 
-const RegSecond: FC<RootStackScreenType<SCREENS.regSecond>> = ({
+const RegSecond: FC<RootStackScreenType<SCREENS.regSecond>> = (
   navigation,
 }) => {
   const initialValues: IInitialValues = {
@@ -52,24 +54,39 @@ const RegSecond: FC<RootStackScreenType<SCREENS.regSecond>> = ({
                 <KeyboardLayout>
                   <CustomTextInput
                     onChange={() => {}}
+                    keyboardType="number-pad"
                     placeholder="Вік"
                     customStyles={styles.stylesInput}
                   />
                   <Selector
+                    value={values.gender}
+                    onChange={value => {
+                      handleTextChange({fieldName: 'gender', value});
+                    }}
                     listProperties={listGenders}
                     placeholder="Стать"
                     error={errors.gender}
                     customStyles={styles.stylesInput}
                   />
-                  <CustomTextInput
-                    onChange={() => {}}
+                  <InputSelector
+                    onChange={value => {
+                      handleTextChange({fieldName: 'preferences', value});
+                    }}
+                    onChangeText={v => {}}
                     placeholder="Вподобання"
                     customStyles={styles.stylesInput}
+                    value={values.preferences}
+                    arrayOptions={arrayMocOptions}
                   />
-                  <CustomTextInput
-                    onChange={() => {}}
+                  <InputSelector
+                    onChange={value => {
+                      handleTextChange({fieldName: 'allergies', value});
+                    }}
+                    onChangeText={v => {}}
                     placeholder="Алергії"
                     customStyles={styles.stylesInput}
+                    value={values.allergies}
+                    arrayOptions={arrayMocOptions}
                   />
                   <CustomButton
                     onPress={() => {}}
